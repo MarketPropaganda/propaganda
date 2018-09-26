@@ -1,0 +1,1384 @@
+@import url("reset.css" );
+@import url("../font/iconfont.css");
+body{
+	background-color: rgb(246, 247, 248);
+	font-family: "微软雅黑";
+}
+/*头顶广告*/
+div.top-ad{
+	width:1349px;
+	height:100px;
+	margin:0 auto;
+	background:rgb(26, 16, 17) url(../img/148835964015988427.jpg) no-repeat center;
+	position: relative;
+}
+div.top-ad >a:first-child{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+div.top-ad >a:last-child{
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top:3px;
+	right:56px;
+	z-index: 2;
+	background: url(../img/indexNew-bg.png) no-repeat -106px -145px;
+}
+/*顶部导航*/
+div.nav-bar{
+	width:1190px;
+	height:36px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+div.nav-bar-l{
+	height:36px;
+	display: flex;
+}
+div.nav-bar-l >div{
+	/*width:1190px;*/
+	height:36px;
+	line-height: 36px;
+	display: flex;
+	align-items: center;
+}
+div.nav-bar-l >div >a{
+	width:100%;
+	height:100%;
+	display: block;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	font-family:arial, tahoma, 宋体;
+	padding:0 9px;
+}
+div.nav-bar-l >div >a >span{
+	color:rgb(187, 187, 187);
+	font-size: 12px;
+}
+div.nav-bar-r{
+	height:36px;
+	display: flex;
+	line-height: 36px;
+}
+div.nav-bar-r >a{
+	height:100%;
+	display: inline-block;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	font-family:arial, tahoma, 宋体;
+	padding:0 9px;
+}
+div.nav-bar-r >div{
+	height:36px;
+	line-height: 36px;
+	padding:0 9px;	
+}
+div.nav-bar-r >div >a{
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	font-family:arial, tahoma, 宋体;
+
+}
+div.nav-bar-r >div >a >span{
+	color:rgb(187, 187, 187);
+	font-size: 12px;
+	margin-left:3px;
+}
+div.nav-bar-r >div >a >i{
+	/*color:rgb(102, 102, 102);*/
+	font-size: 19px;
+	margin-right: 5px;	
+}
+div.nav-bar-r >div >a >b{
+	color:rgb(255,255,255);
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	margin-top: -12px;
+	/*display: inline-block;*/
+	background-color: rgb(247, 167, 5);	
+	width:16px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 50%;
+}
+div.nav-bar-r >div >a >i.icon-shouji{
+	margin-top:-2px;
+	margin-right:2px;	
+}
+div.nav-bar a:hover{
+	color:rgb(255, 102, 0);
+}
+/*头部*/
+div.header{
+	width:1349px;
+	height:100px;
+	margin:0 auto;
+	background: url(../img/daka-first.jpg) no-repeat center;
+}
+div.header >div.container{
+	width:1190px;
+	height:100px;
+	margin:0 auto;
+	position: relative;
+}
+div.header >div.container >a{
+	display: block;
+	width:190px;
+	height:100px;
+	background: url(../img/148829418895844006.png) no-repeat left top;
+}
+div.header >div.container >div.search{
+	width:550px;
+	height:63px;
+	position: absolute;
+	top:30px;
+	right:220px;
+}
+div.header >div.container >div.search >span{
+	color:rgb(204,204,204);
+	font-size: 14px;
+	position: absolute;
+	top:14px;
+	left:8px;
+}
+div.header >div.container >div.search form{
+	display: flex;
+}
+div.header >div.container >div.search input[type=text]{
+	width:450px;
+	height:40px;
+	box-sizing: border-box;
+	border:2px solid rgb(255, 192, 1);
+	border-right:0;
+	padding-left:28px;
+	font-family: arial, tahoma, 宋体;
+	color:rgb(204,204,204);
+	font-size:12px;
+}
+div.header >div.container >div.search input[type=submit]{
+	width:100px;
+	height:40px;
+	background-color: rgb(255, 192, 1);
+	box-sizing: border-box;
+	border:0;
+	padding:0;
+	cursor: pointer;
+	font-family:"MicroSoft YaHei";
+	color:rgb(51,51,51);
+	font-size:14px;
+	font-weight: 700;
+}
+div.header >div.container >div.search >div.list{
+	width:550px;
+	height:18px;
+	margin-top:5px;
+}
+div.header >div.container >div.search >div.list >ul{
+	width:100%;
+	height:100%;
+	display: flex;
+}
+div.header >div.container >div.search >div.list >ul >li{
+	/*width:100%;*/
+	height:100%;
+}
+div.header >div.container >div.search >div.list >ul >li >a{
+	/*width:100%;*/
+	height:100%;
+	margin-right:10px;
+	font-family:"Microsoft YaHei" ;
+	color:rgb(255,255,255);
+	font-size:12px ;
+}
+
+div.header >div.container >div.search >div.list >ul >li >a:hover{
+	color:rgb(255, 102, 0);
+}
+/*导航*/
+div.nav{
+	width:1349px;
+	height:40px;
+	margin:0 auto;
+	background: url(../img/daka-second.jpg) no-repeat center;
+}
+div.nav >div.container{
+	width:1190px;
+	height:40px;
+	margin:0 auto;
+	display: flex;
+}
+div.nav >div.container >a{
+	width:178px;
+	height:40px;
+	line-height: 40px;
+	/*text-align: center;*/
+	display: block;
+	background-color:rgb(255, 192, 1);
+	font-family:"MicroSoft YaHei";
+	color:rgb(51,51,51);
+	font-size:14px;
+	font-weight: 700;
+	padding-left:12px;
+}
+div.nav >div.container >ul{
+	width:770px;
+	height:40px;
+	display: flex;
+	justify-content: space-around;
+	/*background-color:rgb(255, 192, 1);*/
+	/*align-content: center;*/
+}
+div.nav >div.container >ul >li{
+	/*width:190px;*/
+	height:40px;
+	/*width:auto;*/
+	position: relative;
+	
+}
+div.nav >div.container >ul >li >a{
+	display: block;
+	height:40px;
+	line-height: 40px;
+	/*width:auto;*/
+	font-family:"MicroSoft YaHei";
+	color:rgb(255,255,255);
+	font-size:15px;
+}
+div.nav >div.container >ul >li >i{
+	display: block;
+	height:16px;
+	width:16px;
+	background:url(../img/npbg.png) no-repeat 1px -205px;
+	position: absolute;
+	right:-17px;
+	top: 4px;
+}
+
+div.nav >div.container >ul >li >a:hover{
+	color:rgb(255, 102, 0);
+}
+/*轮播区域*/
+div.banner{
+	width: 1349px;
+	height:455px;
+	margin:0 auto;
+	background-color:rgb(112,150,41); 
+}
+div.banner >div.containter{
+	width: 1190px;
+	height:455px;
+	margin:0 auto;
+	display: flex;
+}
+div.banner >div.containter >div.aside{
+	width: 190px;
+	height:455px;
+	background-color:rgb(255,255,255);
+}
+div.banner >div.containter >div.aside >ul{
+	width: 190px;
+	height:455px;
+}
+div.banner >div.containter >div.aside >ul >li{
+	width: 184px;
+	height:35px;
+	padding-left:6px;
+	display: flex;
+	/*justify-content:space-around; */
+	align-items: center;
+}
+div.banner >div.containter >div.aside >ul >li >a{
+	margin-left: 7px;
+	color:rgb(51,51,51);
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	font-size:13px;
+}
+div.banner >div.containter >div.aside >ul >li:hover{
+	background-color:rgb(250,75,75);
+}
+div.banner >div.containter >div.aside >ul >li:hover >a{
+	color:rgb(255,255,255);
+}
+
+div.banner >div.containter >div.banner-m{
+	width:770px;
+	height:455px;
+	position: relative;
+}
+div.banner >div.containter >div.banner-m >ul{
+	width:770px;
+	height:455px;
+}
+div.banner >div.containter >div.banner-m >ul >li{
+	width:770px;
+	height:455px;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+div.banner >div.containter >div.banner-m >ul >li.selected{
+	z-index: 5;
+}
+div.banner >div.containter >div.banner-m >ul >li >a{
+	display: block;
+	width:770px;
+	height:455px;
+}
+div.banner >div.containter >div.banner-m >ul >li >a >img{
+	display: block;
+	width:770px;
+	height:455px;
+	display: block;
+}
+div.banner >div.containter >div.banner-m >ol{
+	width:100%;
+	height:20px;
+	position: absolute;
+	left:0;
+	bottom:10px;
+	display: flex;
+	justify-content: center;
+}
+div.banner >div.containter >div.banner-m >ol >li{
+	width:20px;
+	height:20px;
+	border-radius: 50%;
+	background-color: rgb(51,51,51);
+	margin:0 4px;
+	text-align: center;
+	line-height: 20px;
+	color:rgb(255,255,255);
+	font-size: 12px;
+	font-family: arial, tahoma, 宋体;
+}
+div.banner >div.containter >div.banner-m >ol >li.selected{
+	background-color: rgb(255,96,0);
+}
+div.banner >div.containter >div.banner-m >a.bbtn-l{
+	width:38px;
+	height:78px;
+	position: absolute;
+	left:8px;
+	bottom:50%;
+	margin-bottom:-34px;
+	display: block;
+	background: url(../img/indexNew-bg.png) no-repeat 0 -51px;
+	opacity: 0;
+	z-index: 6;
+}
+div.banner >div.containter >div.banner-m >a.bbtn-r{
+	width:38px;
+	height:78px;
+	position: absolute;
+	right:8px;
+	bottom:50%;
+	margin-bottom:-34px;
+	display: block;
+	background: url(../img/indexNew-bg.png) no-repeat -43px -51px;
+	opacity: 0;
+	z-index: 6;
+}
+div.banner >div.containter >div.banner-m:hover >a.bbtn-l{
+	opacity: 0.5;
+}
+div.banner >div.containter >div.banner-m:hover >a.bbtn-r{
+	opacity: 0.5;
+}
+div.banner >div.containter >div.banner-m >a.bbtn-l:hover{
+	opacity: 1;
+}
+div.banner >div.containter >div.banner-m >a.bbtn-r:hover{
+	opacity: 1;
+}
+div.banner >div.containter >div.rside{
+	width:218px;
+	height:431px;
+	margin:10px 0;
+	background-color:rgb(255,255,255);
+}
+div.banner >div.containter >div.rside >ul.head{
+	width:218px;
+	height:30px;
+	line-height: 30px;
+	/*padding:10px 0;*/
+	display: flex;
+	justify-content: center;
+}
+div.banner >div.containter >div.rside >ul.head >li{
+	width:62px;
+	height:30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;	
+}
+div.banner >div.containter >div.rside >ul.head >li >a{
+	display:block;
+	height:28px;
+	width:32px;
+	/*border-bottom:2px solid rgb(255, 96, 0);*/
+	color:rgb(102,102,102);
+	font-size: 12px;
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+div.banner >div.containter >div.rside >ul.head >li >a.selected{
+	border-bottom:2px solid rgb(255, 96, 0);	
+	font-weight: 700;
+}
+div.banner >div.containter >div.rside >ul.news{
+	width:218px;
+	height:131px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+div.banner >div.containter >div.rside >ul.news >li{
+	width:179px;
+	height:29px;
+}
+div.banner >div.containter >div.rside >ul.news >li >a{
+	color:rgb(102,102,102);
+	font-size: 12px;
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+div.banner >div.containter >div.rside >ul.news >li:first-child >a{
+	color:rgb(255, 96, 0);
+}
+div.banner >div.containter >div.rside >ul.news >li >a:hover{
+	color:rgb(255, 96, 0);
+}
+div.banner >div.containter >div.rside >ul.iconlist{
+	width:219px;
+	height:186px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.banner >div.containter >div.rside >ul.iconlist >li{
+	width:73px;
+	height:62px;
+	box-sizing: border-box;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li >a{
+	width:73px;
+	height:62px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.banner >div.containter >div.rside >ul.iconlist >li >a >span{
+	/*color:rgb(102,102,102);*/
+	font-size: 26px;
+	/*font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(1) >a >span{
+	color:rgb(0, 198, 188);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(2) >a >span{
+	color:rgb(1, 179, 255);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(3) >a >span{
+	color:rgb(98, 194, 0);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(4) >a >span{
+	color:rgb(136, 109, 240);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(5) >a >span{
+	color:rgb(255, 126, 0);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(6) >a >span{
+	color:rgb(136, 109, 240);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(7) >a >span{
+	color:rgb(255, 67, 128);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(8) >a >span{
+	color:rgb(88, 132, 233);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li:nth-child(9) >a >span{
+	color:rgb(136, 109, 240);
+	/*font-size: 26px;*/
+}
+div.banner >div.containter >div.rside >ul.iconlist >li >a >p{
+	color:rgb(51,51,51);
+	font-size: 12px;
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+div.banner >div.containter >div.rside >ul.iconlist >li >a >p:hover{
+	color:rgb(255, 96, 0);
+}
+div.banner >div.containter >div.rside >h3{
+	width:219px;
+	height:30px;
+	line-height: 30px;
+	margin-top:10px;
+	padding-left: 15px;
+	color:rgb(51,51,51);
+	font-size: 12px;
+	font-weight: 700;
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+div.banner >div.containter >div.rside >ul.applist{
+	width:219px;
+	height:44px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	padding:0 10px;
+}
+div.banner >div.containter >div.rside >ul.applist >li{
+	width:32px;
+	height:32px;
+	box-sizing: border-box;
+	background:url(../img/indexNew-bg.png) no-repeat -169px -38px;
+}
+div.banner >div.containter >div.rside >ul.applist >li:nth-child(2){
+	background-position:-168px 0 ;
+}
+div.banner >div.containter >div.rside >ul.applist >li:nth-child(3){
+	background-position:-88px 0 ;
+}
+div.banner >div.containter >div.rside >ul.applist >li:nth-child(4){
+	background-position:-128px 0 ;
+}
+/*多图轮播*/
+div.dtlb{
+	width: 1190px;
+	height: 184px;
+	margin:20px auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+div.dtlb >ul{
+	/*width: 1100px;*/
+	height: 184px;
+	/*margin:20px auto;*/
+}
+div.dtlb >ul >li{
+	width: 290px;
+	height: 184px;
+	float: left;
+}
+div.dtlb >ul >li:hover{
+	opacity: 0.8;
+}
+div.dtlb >ul >li:first-child~li{
+	margin-left: 10px;
+}
+div.dtlb >ul >li >a{
+	display: block;
+	width: 290px;
+	height: 184px;
+}
+div.dtlb >ul >li >a >img{
+	display: block;
+	width: 290px;
+	height: 184px;
+}
+div.dtlb >a.dtbtn-l{
+	width:38px;
+	height:78px;
+	position: absolute;
+	left:0px;
+	bottom:50%;
+	margin-bottom:-34px;
+	display: block;
+	background: url(../img/indexNew-bg.png) no-repeat 0 -51px;
+	opacity: 0;
+	z-index: 6;
+}
+div.dtlb >a.dtbtn-r{
+	width:38px;
+	height:78px;
+	position: absolute;
+	right:0px;
+	bottom:50%;
+	margin-bottom:-34px;
+	display: block;
+	background: url(../img/indexNew-bg.png) no-repeat -43px -51px;
+	opacity: 0;
+	z-index: 6;
+}
+div.dtlb:hover >a.dtbtn-l{
+	opacity: 0.5;
+}
+div.dtlb:hover >a.dtbtn-r{
+	opacity: 0.5;
+}
+div.dtlb >a.dtbtn-l:hover{
+	opacity: 1;
+}
+div.dtlb >a.dtbtn-r:hover{
+	opacity: 1;
+}
+/*放心去喜欢*/
+div.fxqxh{
+	width:1190px ;
+	height: 430px;
+	margin: 20px auto 0 auto;
+}
+div.fxqxh >div.title{
+	width:1190px ;
+	height: 40px;
+	line-height: 40px;
+}
+div.fxqxh >div.title >h5{
+	color: rgb(34,34,34);
+	font-size: 20px;
+	font-family: '微软雅黑';
+	font-weight: 700;
+}
+div.fxqxh >div.main{
+	width:1190px;
+	height: 380px;
+	/*margin-top:10px;*/
+}
+div.fxqxh >div.main >div.lside{
+	width:382px;
+	height: 380px;
+	float: left;
+	
+}
+div.fxqxh >div.main >div.lside >div.out{
+	width:382px;
+	height: 188px;
+	position: relative;
+}
+div.fxqxh >div.main >div.lside >div.out >a{
+	display: block;
+	width:382px;
+	height: 188px;
+	background: url(../img/secondScreen-bg.png) no-repeat left top;
+	
+}
+div.fxqxh >div.main >div.lside >div.out >a >div.in{
+	width:382px;
+	height: 169px;
+	padding-top: 10px;
+	/*background-color: rgb(255,255,255);*/
+}
+div.fxqxh >div.main >div.lside >div.out >a >div.in >h5{
+	margin:5px 0 0 20px;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	font-family: '微软雅黑';
+	font-weight: 700;
+	line-height: 30px;
+}
+div.fxqxh >div.main >div.lside >div.out >a >div.in >h6{
+	width:102px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: rgb(255,255,255);
+	margin:5px 0 0 8px;
+	padding-left: 12px;
+	color:rgb(237, 26, 70);
+	font-size: 14px;
+	font-family: '微软雅黑';
+	font-weight: 500;
+	line-height: 24px;
+}
+div.fxqxh >div.main >div.lside >div.out >a >div.in >p{
+	width:120px;
+	height: 60px;
+	margin:3px 0 0 20px;
+	color:rgb(255,182,182);
+	font-size: 14px;
+	font-family: '微软雅黑';
+	font-weight: 500;
+	line-height: 20px;
+}
+div.fxqxh >div.main >div.lside >div.out >a >div.in >img{
+	width:150px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	transition: all 0.5s;
+	
+}
+div.fxqxh >div.main >div.lside >div.out2{
+	width:382px;
+	height: 188px;
+	position: relative;
+	margin-top: 2px;
+}
+div.fxqxh >div.main >div.lside >div.out2 >a{
+	display: block;
+	width:382px;
+	height: 188px;
+	background: url(../img/secondScreen-bg.png) no-repeat left bottom;
+	
+}
+div.fxqxh >div.main >div.lside >div.out2 >a >div.in{
+	width:382px;
+	height: 169px;
+	padding-top: 10px;
+	/*background-color: rgb(255,255,255);*/
+}
+div.fxqxh >div.main >div.lside >div.out2 >a >div.in >h5{
+	margin:5px 0 0 20px;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	font-family: '微软雅黑';
+	font-weight: 700;
+	line-height: 30px;
+}
+/*div.fxqxh >div.main >div.lside >div.out2 >a >div.in >h6{
+	width:102px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: rgb(255,255,255);
+	margin:5px 0 0 8px;
+	padding-left: 12px;
+	color:rgb(237, 26, 70);
+	font-size: 14px;
+	font-family: '微软雅黑';
+	font-weight: 500;
+	line-height: 24px;
+}*/
+div.fxqxh >div.main >div.lside >div.out2 >a >div.in >p{
+	width:120px;
+	height: 60px;
+	margin:3px 0 0 20px;
+	color:rgb(255,182,182);
+	font-size: 14px;
+	font-family: '微软雅黑';
+	font-weight: 500;
+	line-height: 20px;
+}
+div.fxqxh >div.main >div.lside >div.out2 >a >div.in >img{
+	width:150px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	transition: all 0.5s;
+}
+div.fxqxh >div.main >div.lside >div >a >div.in:hover >img{
+	margin-right:10px;
+}
+div.fxqxh >div.main >div.rside{
+	width:797px;
+	height: 379px;
+	float: left;
+	margin: 10px 0 0 11px;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list{
+	width:797px;
+	height: 379px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li{
+	width:198px;
+	height: 188px;
+	margin:1px 0 0 1px;
+	box-sizing: border-box;
+	background-color: rgb(255,255,255);
+	position: relative;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li >a{
+	display: block;
+	width:100%;
+	height: 100%;
+	/*box-sizing: border-box;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li >a >h6{
+	font-size: 20px;
+	font-family: '微软雅黑';
+	font-weight: 700;
+	line-height: 30px;
+	margin:15px 0 0 16px ;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(1) >a >h6{
+	color:rgb(75, 115, 167);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(2) >a >h6{
+	color:rgb(213, 62, 51);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(3) >a >h6{
+	color:rgb(141, 199, 138);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(4) >a >h6{
+	color:rgb(148, 94, 234);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(5) >a >h6{
+	color:rgb(151, 69, 154);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(6) >a >h6{
+	color:rgb(74, 158, 202);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(7) >a >h6{
+	color:rgb(112, 61, 4);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li:nth-child(8) >a >h6{
+	color:rgb(225, 63, 86);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li >a >p{
+	font-size: 14px;
+	font-family: '微软雅黑';
+	font-weight: 500;
+	line-height: 18px;
+	margin:0 0 0 16px ;
+	color: rgb(153, 153, 153);
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li >a >img{
+	width:128px;
+	height: 128px;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 70px;
+	transition: all 0.5s;
+}
+div.fxqxh >div.main >div.rside >ul.goods-list >li >a:hover >img{
+	margin-left:-10px;
+}
+/*div.rside >ul.goods-list >li:hover >a{*/
+div.fxqxh >div.main >div.rside >ul.goods-list >li:hover >a{
+	/*margin: -2px -2px -2px -2px;*/
+	left: -2px;
+	top: -2px;
+	border: 2px solid rgb(234, 0, 20);
+}
+/*大牌精选必抢*/
+div.djb{
+	width:1190px;
+	height: 419px;
+	margin: 40px auto 20px auto;
+	display: flex;
+}
+div.djb >div.left{
+	width:390px;
+	height: 419px;
+	margin: 0 0 0 10px;
+	background-color: rgb(255,255,255);
+	
+}
+div.djb >div.left >div.title{
+	width:390px;
+	height: 52px;
+	line-height: 52px;
+	background-color: rgb(65, 157, 174);
+}
+div.djb >div.left >div.title >h5{
+	color: rgb(255,255,255);
+	font-size: 20px;
+	/*font-family: ;*/
+	font-weight: 700;
+	margin-left: 20px;
+}
+div.djb >div.left >div.content{
+	width:367px;
+	height: 344px;
+	margin: 10px;
+}
+div.djb >div.left >div.content >a{
+	display: block;
+	width:367px;
+	height: 114px;
+}
+div.djb >div.left >div.content >a >img{
+	display: block;
+	width:367px;
+	height: 114px;
+}
+div.djb >div.left >div.content >ul{
+	width:367px;
+	height: 231px;
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+div.djb >div.left >div.content >ul >li{
+	box-sizing: border-box;
+	width:183px;
+	height: 115px;
+	border-left:1px solid rgb(246, 247, 248) ;
+	border-bottom:1px solid rgb(246, 247, 248) ;
+	position: relative;
+}
+div.djb >div.left >div.content >ul >li > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+div.djb >div.left >div.content >ul >li > a >p{
+	color: rgb(51,51,51);
+	font-size: 15px;
+	line-height: 20px;
+	/*font-weight: ;
+	font-family: ;*/
+	margin: 10px 0 0 20px;
+	width: 70px;
+}
+div.djb >div.left >div.content >ul >li > a img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	z-index: 6;
+	transition: all 0.5s;
+}
+div.djb >div.left >div.content >ul >li:hover > a >p{
+	color: rgb(255,102,0);
+}
+div.djb >div.left >div.content >ul >li:hover > a >img{
+	margin-right: 10px;
+}
+div.djb >div.middle{
+	width:390px;
+	height: 419px;
+	margin: 0 0 0 10px;
+	background-color: rgb(255,255,255);
+	
+}
+div.djb >div.middle >div.title{
+	width:390px;
+	height: 52px;
+	line-height: 52px;
+	background-color:rgb(134, 123, 197);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.djb >div.middle >div.title >h5{
+	color: rgb(255,255,255);
+	font-size: 20px;
+	/*font-family: ;*/
+	font-weight: 700;
+	margin-left: 20px;
+	flex: auto;
+}
+div.djb >div.middle >div.title >a{
+	display: block;
+	width:76px;
+	height: 20px;
+	color: rgb(255,255,255);
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 12px;
+}
+div.djb >div.middle >div.title >a >i{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	margin-left: 5px;
+	vertical-align: -3px;
+	background: url(../img/indexNew-bg.png) no-repeat -150px -159px;
+
+}
+
+div.djb >div.middle >div.content{
+	width:367px;
+	height: 344px;
+	margin: 10px;
+}
+
+div.djb >div.middle >div.content >ul{
+	width:367px;
+	height: 345px;
+	/*margin-top: 10px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+div.djb >div.middle >div.content >ul >li{
+	box-sizing: border-box;
+	width:183px;
+	height: 115px;
+	border-left:1px solid rgb(246, 247, 248) ;
+	border-bottom:1px solid rgb(246, 247, 248) ;
+	position: relative;
+}
+div.djb >div.middle >div.content >ul >li > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+div.djb >div.middle >div.content >ul >li > a >p{
+	color: rgb(51,51,51);
+	font-size: 15px;
+	line-height: 20px;
+	/*font-weight: ;
+	font-family: ;*/
+	margin: 10px 0 0 20px;
+	width: 70px;
+}
+div.djb >div.middle >div.content >ul >li > a img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	/*top: 25px;
+	right: 10px;*/
+	bottom: 0;
+	right: 0;
+	z-index: 6;
+	transition: all 0.5s;
+}
+div.djb >div.middle >div.content >ul >li:hover > a >p{
+	color: rgb(255,102,0);
+}
+div.djb >div.middle >div.content >ul >li:hover > a >img{
+	margin-right: 10px;
+}
+div.djb >div.right{
+	width:390px;
+	height: 419px;
+	margin: 0 0 0 10px;
+	background-color: rgb(255,255,255);
+	
+}
+div.djb >div.right >div.title{
+	width:390px;
+	height: 52px;
+	line-height: 52px;
+	background-color:rgb(162, 86, 131);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.djb >div.right >div.title >h5{
+	color: rgb(255,255,255);
+	font-size: 20px;
+	/*font-family: ;*/
+	font-weight: 700;
+	margin-left: 20px;
+	flex: auto;
+}
+div.djb >div.right >div.title >a{
+	display: block;
+	width:76px;
+	height: 20px;
+	color: rgb(255,255,255);
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 12px;
+}
+div.djb >div.right >div.title >a >i{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	margin-left: 5px;
+	vertical-align: -3px;
+	background: url(../img/indexNew-bg.png) no-repeat -150px -159px;
+
+}
+
+div.djb >div.right >div.content{
+	width:387px;
+	height: 363px;
+	margin-top: 2px;
+}
+div.djb >div.right >div.content >ol{
+	width:387px;
+	height: 34px;
+	border-bottom:1px solid rgb(246, 247, 248) ;
+	/*margin-top: 10px;*/
+	display: flex;
+}
+div.djb >div.right >div.content >ol >li{
+	box-sizing: border-box;
+	width:129px;
+	height: 32px;
+	text-align: center;
+}
+div.djb >div.right >div.content >ol >li > span{
+	display: block;
+	margin: 0 auto;
+	width: 62px;
+	height: 32px;
+	line-height: 34px;
+	padding: 0 15px;
+	/*border-bottom:2px solid rgb(154, 93, 127) ;*/
+}
+div.djb >div.right >div.content >ol >li > span.selected{
+	border-bottom:2px solid rgb(154, 93, 127) ;
+}
+div.djb >div.right >div.content >ul{
+	width:368px;
+	height: 328px;
+	margin: 0 auto;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;*/
+}
+div.djb >div.right >div.content >ul >li{
+	box-sizing: border-box;
+	width:378px;
+	height: 143px;
+	padding: 10px 0 10px 10px;
+	border-bottom:1px solid rgb(246, 247, 248) ;
+	position: relative;
+}
+div.djb >div.right >div.content >ul >li > a{
+	display: block;
+	width:378px;
+	height: 143px;
+}
+div.djb >div.right >div.content >ul >li > a >p{
+	color: rgb(51,51,51);
+	font-size: 15px;
+	line-height: 28px;
+	/*font-weight: ;
+	font-family: ;*/
+	/*margin: 10px 0 0 20px;
+	width: 70px;*/
+}
+div.djb >div.right >div.content >ul >li > a >img{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 15px 22px 0 0;
+	/*position: absolute;
+	top: 25px;
+	right: 10px;
+	z-index: 6;*/
+	transition: all 0.5s;
+}
+div.djb >div.right >div.content >ul >li:hover > a >p{
+	color: rgb(255,102,0);
+}
+div.djb >div.right >div.content >ul >li > a >img:hover{
+	margin-right: 32px;
+	margin-left: -10px;
+}
+/*为您推荐*/
+div.wntj{
+	width:1190px ;
+	height: 334px;
+	margin: 20px auto 0 auto;
+}
+div.wntj >div.title{
+	width:1190px ;
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+div.wntj >div.title >h5{
+	color: rgb(34,34,34);
+	font-size: 20px;
+	font-family: '微软雅黑';
+	font-weight: 700;
+}
+div.wntj >div.title >a{
+	color: rgb(51,51,51);
+	font-size: 16px;
+	font-family: '微软雅黑';
+	/*font-weight: 700;*/
+}
+div.wntj >div.title >a:hover{
+	color: rgb(255,102,0);
+}
+div.wntj >div.main{
+	width:1190px;
+	height: 282px;
+	/*margin-top:10px;*/
+}
+div.wntj >div.main >ul{
+	width:1190px;
+	height: 282px;
+	margin-top:10px;
+	display: flex;
+	justify-content: space-between;
+}
+div.wntj >div.main >ul >li{
+	width:197px;
+	height: 281px;
+	margin-top:1px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(255,255,255);
+}
+div.wntj >div.main >ul >li >a >img{
+	width:160px;
+	height: 160px;
+	margin-top:19px;
+}
+div.wntj >div.main >ul >li >a >p{
+	width:160px;
+	height: 36px;
+	margin-top:13px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 18px;
+	color: rgb(51,51,51);
+}
+div.wntj >div.main >ul >li >a >p:hover{
+	color: rgb(255,102,0);	
+}
+div.wntj >div.main >ul >li >span{
+	width:160px;
+	height: 36px;
+	margin-top:13px;
+	margin-left: 19px;
+	color: rgb(225, 34, 40);
+	font-size: 20px;
+	font-family: arial;
+	line-height: 27px;
+	text-align: left;
+	position: relative;
+}
+div.wntj >div.main >ul >li >span >i{
+	display: inline-block;
+	width:47px;
+	height: 18px;
+	background-color:rgb(250, 75, 75);
+	border-radius: 2px;
+	margin-top:4px;
+	margin-right: 10px;
+	color: rgb(255,255,255);
+	font-size: 12px;
+	font-style: normal;
+	/*font-family: arial;*/
+	line-height: 18px;
+	/*text-align: left;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+}
+/*F1服装百货*/
+div.fzbh{
+	width: 1190px;
+	height: 624px;
+	margin: 30px auto 0;
+}
+div.fzbh >div.title{
+	width: 1190px;
+	height: 34px;
+}
+div.fzbh >div.title >h5{
+	float: left;
+	width: 190px;
+	height: 34px;
+	line-height: 34px;
+	color: rgb(34,34,34);
+	font-size: 20px;
+}
+div.fzbh >div.title >ul{
+	float: right;
+	width: 380px;
+	height: 34px;
+}
+div.fzbh >div.title >ul >li{
+	float: left;
+	width: 56px;
+	height: 34px;
+	margin: 6px 0 0 20px;
+	/*line-height: 34px;*/
+	color: rgb(34,34,34);
+	font-size: 20px;
+	text-align: center;
+	
+}
+div.fzbh >div.title >ul >li >a{
+	/*float: left;
+	width: 56px;
+	height: 34px;*/
+	/*margin: 6px 0 0 20px;*/
+	/*line-height: 34px;*/
+	color: rgb(102,102,102);
+	font-size: 14px;
+	/*font-family: arial, tahoma, 宋体;*/
+}
+div.fzbh >div.title >ul >li >a:hover{
+	color:rgb(120, 62, 24);
+	font-weight: 700;
+}
+div.fzbh >div.title >ul >li:first-child >a{
+	color:rgb(120, 62, 24);
+	font-weight: 700;
+}
+div.fzbh >div.title >ul >li >span{
+	display: block;
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	border-left: 11px solid rgba(0,0,0,0);
+	border-right: 11px solid rgba(0,0,0,0);
+	border-bottom: 9px solid rgb(120, 62, 24);
+}
+div.fzbh >div.left{
+	width: 389px;
+	height: 590px;
+	
+}
+div.fzbh >div.left >a{
+	display: block;
+	width: 383px;
+	height:330px;
+	padding-top: 16px;
+	position: relative;	
+}
+div.fzbh >div.left >a >i{
+	display: block;
+	width: 0px;
+	height:0px;
+	border-left: 6px solid rgb(241, 84, 83);
+	border-top: 6px solid rgb(241, 84, 83);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 6;	
+}
+div.fzbh >div.left >a >h5{
+	width: 200px;
+	height:40px;
+	margin-left: 20px;	
+	color: rgb(241, 84, 83);
+	font-size: 20px;
+	line-height: 40px;
+}
+div.fzbh >div.left >a >p{
+	width: 320px;
+	height:16px;
+	margin-left: 20px;	
+	color: rgb(241, 84, 83);
+	font-size: 16px;
+	line-height: 16px;
+}
