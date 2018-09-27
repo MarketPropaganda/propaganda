@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.internetke.com/jsEffects/2018040406/ -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一款基于echarts制作的中国线性动画地图特效 - 【科e互联】</title>
+<meta name="keywords" content="echarts地图,动画地图,线性动画,中国地图">
+<meta name="description" content="一款基于echarts制作的中国线性动画地图特效，可以在网页制作中实现总公司到分公司业务展示、物流、路线等网页设计内容。">
+<link rel="stylesheet" type="text/css" href="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/index.css">
+<!-- slide -->
+<script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/jquery-1.11.1.min_044d0927.js"></script>
+<script>
+	var t = 1000;//控制数字相加时间
+	var text_ =20 + Math.round(Math.random() * (1000 - 1));//随机生成数字
+	var ctl_id = "shuzi_b";//获取数字页面id
+	var Num = 123456789;//起始值
+	onload = function() {
+		Refresh();
+		setInterval("Refresh();", t);
+	}
+	function Refresh() {
+		Num += text_;
+		document.getElementById(ctl_id).innerHTML = parseFloat(Num).toLocaleString();//给数字负值并加逗号
+
+	}
+</script></head>
+
+<body class="mkeBody">
+<div class="mkeHeadBox">一款基于echarts制作的中国线性动画地图特效</div>
+<div class="mkeContentBox">
+<!--效果html开始-->
+<div id="cover"></div>
+<div class="top_slide_wrap" id=""> 
+  <!-----地图------->
+  <div style="" class="top_slide_wrap_ditu"> 我们已为公众及合作伙伴提供了 <br>
+    <b id="shuzi_b">123,461,115</b> <br>
+    次精准天气预报 </div>
+  <div id="container" style="width: 75%; height: 630px; float: right; margin-top: -50px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;" _echarts_instance_="ec_1537958718218"><div style="position: relative; overflow: hidden; width: 1024px; height: 630px; padding: 0px; margin: 0px; border-width: 0px;"><canvas width="1024" height="630" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 1024px; height: 630px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas width="1024" height="630" data-zr-dom-id="zr_1" style="position: absolute; left: 0px; top: 0px; width: 1024px; height: 630px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas width="1024" height="630" data-zr-dom-id="zr_2" style="position: absolute; left: 0px; top: 0px; width: 1024px; height: 630px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/echarts-all-3.js"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/datatool.min.js"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/china.js"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/world.js"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/4538ea0d8195403684b1e97d6ad5f215.js"></script><script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/getscript"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/bmap.min.js"></script> 
+  <script type="text/javascript" src="./一款基于echarts制作的中国线性动画地图特效 - 【科e互联】_files/indexditu.js"></script> 
+</div>
+<!--效果html结束-->
+</div>
+
+
+
+</body></html>
