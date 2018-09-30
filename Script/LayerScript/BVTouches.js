@@ -114,6 +114,7 @@ var BVTouchRegion = this.BVTouchRegion = new Class({
 	},
 
 	mouseEntered: function (touches) {
+		console.log(131321)
 		this.targetLayer.mouseEntered();
 	},
 	mouseExited: function (touches) {

@@ -253,6 +253,7 @@ var SiteStripSegmentButton = this.SiteStripSegmentButton = new Class({
 	},
 	
 	touchDidGoUp: function (touches) {
+		console.log('PageArrowLeft')
 		if (!this.containsGlobalPoint(touches.globalPoint)) { return; }
 		this.setContentsURL(this.imageURL);
 		this.buttonSet.buttonWasClicked(this, touches.event);
