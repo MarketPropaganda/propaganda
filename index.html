@@ -1574,8 +1574,17 @@
             // var arr=location.href.split("#");
             // location.href=arr[0]+"#";
             location.href = ABC;
-            console.log(ABC);
-        }
+        }else if(e.key=="ArrowRight"){
+        	if(Root.root.site.pageSet.zoomedPage&&Root.root.site.pageSet.zoomedPage.nextPage){        		
+        		var next=Root.root.site.pageSet.zoomedPage.nextPage.segment;
+        		Root.root.site.setZoomedSegment(next, false, true)
+        	}
+		}else if(e.key=="ArrowLeft"){
+        	if(Root.root.site.pageSet.zoomedPage&&Root.root.site.pageSet.zoomedPage.previousPage){        		
+        		var previous=Root.root.site.pageSet.zoomedPage.previousPage.segment;
+        		Root.root.site.setZoomedSegment(previous, false, true)
+        	}
+		}
     }
 </script>
 

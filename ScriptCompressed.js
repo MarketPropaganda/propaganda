@@ -7354,6 +7354,7 @@ var lerp = function(d, c, e) {
 			this.expandButton.setX(d.width - this.expandButton.width)
 		},
 		buttonWasClicked: function(f, g) {
+
 			if(this.segment !== this.site.zoomedSegment) {
 				return
 			}
@@ -7388,7 +7389,7 @@ var lerp = function(d, c, e) {
 			this.setContentsURL(this.imageURL)
 		},
 		touchDidGoUp: function(d) {
-			console.log(1321)
+
 			if(!this.containsGlobalPoint(d.globalPoint)) {
 				return
 			}
