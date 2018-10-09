@@ -6733,6 +6733,11 @@ var lerp = function(d, c, e) {
 			this.leftDoodle = new BVLayer(this);
 			this.leftDoodle.setContentsURLAndSize("Images/DoodleLeft.png", 86, 170);
 			this.leftDoodle.setAccelerated(true);
+//			添加logo
+			this.leftLogo = new BVLayer(this);
+			this.leftLogo.setContentsURLAndSize("Images/logo.png", 92, 80);
+			this.leftLogo.setAccelerated(true);
+			
 			this.rightDoodle = new BVLayer(this);
 			this.rightDoodle.setContentsURLAndSize("Images/DoodleRight.png", 67, 184);
 			this.rightDoodle.setAccelerated(true)
@@ -6741,6 +6746,8 @@ var lerp = function(d, c, e) {
 			var i = h.segments.sublayers[1];
 			var g = i.getGlobalPosition();
 			this.leftDoodle.setPosition(g.x - 16, g.y + this.leftDoodle.height - 6);
+//			添加logo定位
+			this.leftLogo.setPosition(g.x - 106, g.y + this.leftLogo.height - 6);
 			var e = h.segments.sublayers[h.segments.sublayers.length - 1];
 			var f = e.getGlobalPointForLocalPoint(e.width, 0);
 			this.rightDoodle.setPosition(f.x - this.rightDoodle.width + 18, f.y + this.rightDoodle.height - 7)
@@ -6748,6 +6755,7 @@ var lerp = function(d, c, e) {
 		setOpacity: function(e) {
 			this.opacity = e;
 			this.leftDoodle.setOpacity(e);
+			this.leftLogo.setOpacity(e);
 			this.rightDoodle.setOpacity(e)
 		}
 	})
