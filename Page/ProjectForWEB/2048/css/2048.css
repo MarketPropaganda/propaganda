@@ -1,0 +1,83 @@
+body,ul,li,h3{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background: #fcfad3;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: arial;
+	height: 60px;
+}
+header .score{
+	float: right;
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: right;
+	color:#666;
+}
+header .score span{
+	display: inline-block;
+	width: 40px;
+	padding:0 10px;
+	color:#ff6529;
+}
+header h3{
+	width: 40%;
+	height: 60px;
+	font-size: 44px;
+	line-height: 60px;
+	text-align: left;
+	font-family:"arial";
+	color:#ff6529;
+	float: left;
+}
+.grid{
+	width: 500px;
+	height: 500px;
+	background: #c4b6ab;
+	margin: 10px auto 0px;
+	border-radius: 20px;
+	position: relative;
+}
+.grid-cell{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	position: absolute;
+	background: #d2c8be;
+}
+.number-cell{
+	font-family: arial;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+	border-radius: 10px;
+}
+.btn-group{
+	margin:0 2%;
+	text-align: center;
+}
+.newgame{
+	display: inline-block;
+	padding: 4px 12px;
+	background: #ff6529;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+}
+.newgame:active{
+	opacity: 0.6;
+}

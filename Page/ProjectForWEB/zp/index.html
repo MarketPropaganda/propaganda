@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>纸牌游戏</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<ul class="container">
+		<li style="width: 100px; height: 150px; background: red url(img/2c.png) no-repeat center / cover"></li>
+	</ul>
+	<div class="leftBtn">左</div>
+	<div class="rightBtn">右</div>
+</body>
+<script src="jquery.js"></script>
+<script>
+	var huase=['c','d','h','s'];
+	var shuzi=['A','2','3','4','5','6','7','8','9','T','J','Q','K'];
+	var pai=[];
+	for(let i in huase){
+		for(let j in shuzi){
+			var x="";
+			x=shuzi[j]+huase[i];
+			pai.push(x);
+		}
+	}
+	pai.sort(()=>Math.random()-0.5);
+	for(let i in pai){
+		$("<li>").css({ 
+			background: `url(img/${pai[i]}.png) no-repeat center / cover`,
+			opacity:0,
+		}).appendTo(".container").data("val",pai[i].substring(0,1))
+	}
+
+
+	var x=0;
+	for(let i=1;i<8;i++){
+		for(let j=1;j<=i;j++){
+			$("li").eq(x).delay(100*x).animate({
+				top:55*(i-1),
+				marginLeft:-55*(i-1)+110*(j-1)-50,
+				opacity:1,
+			}).attr("num",`${i}_${j}`);
+			x++;
+		}
+	}
+
+	for(let i=x;i<pai.length;i++){
+		$("li").eq(i).delay(100*i).attr({class:"left",
+			num:"_"}).animate({
+			top:520,
+			marginLeft:-300,
+			opacity:1,
+		})
+	}
+
+	var value="";	
+	$("ul").on("click","li",function(){
+		if($(this).attr("num")){
+			var num=$(this).attr("num").split("_");
+			var num1=parseInt(num[0])+1+"_"+parseInt(num[1]);
+			var num2=parseInt(num[0])+1+"_"+(parseInt(num[1])+1);
+			if($("li[num="+num1+"]")[0] || $("li[num="+num2+"]")[0]){
+
+			}else{
+				$(this).toggleClass("active");
+				let w=$(this).hasClass("active");
+				if(w){
+					$(this).animate({
+						top:"-=20",
+					})
+				}else{
+					$(this).animate({
+						top:"+=20",
+					})
+				}
+				if(!Boolean(value)){
+					value=$(this).data("val");
+				}else{
+					if(value===$(this).data("val")){
+						$(".active").animate({
+							top:0,
+							marginLeft:500,
+						},1000,function(){
+							$(".active").remove();
+						})
+					}else{
+						$(".active").animate({top:"+=20"}).removeClass("active")
+					}
+					value="";
+				}
+				
+			}
+		}
+		
+	})
+
+
+	var index=1;
+	$(".rightBtn").click(function(){
+		index++
+		$(".left").eq(-1).css("zIndex",index).stop().animate({marginLeft:"+=500"}).removeClass("left").addClass("right");
+	})
+	$(".leftBtn").click(function(){
+		index++
+		$(".right").eq(0).css("zIndex",index).stop().animate({marginLeft:"-=500"}).removeClass("right").addClass("left");
+	})
+
+
+
+
+
+
+	
+</script>
+</html>
